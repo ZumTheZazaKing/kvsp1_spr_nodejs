@@ -22,7 +22,7 @@ app.post('/vote_count_updated', (req, res) => {
 
 const io = new Server(server, {
     cors:{
-        origin: "https://kvsp1spr.teknologikomputeransp1.com",
+        origin: "http://127.0.0.1:8000",
         methods: ["GET","POST"]
     }
 })
