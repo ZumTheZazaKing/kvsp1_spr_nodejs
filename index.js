@@ -21,11 +21,11 @@ app.post('/vote_count_updated', (req, res) => {
 });
 
 const io = new Server(server, {
-    cors:{
-        origin: "https://kvsp1spr.teknologikomputeransp1.com",
-        methods: ["GET","POST"]
-    }
-})
+  cors: {
+    origin: "https://spr.kvsp1.edu.my",
+    methods: ["GET", "POST"],
+  },
+});
 
 io.on("connection", socket => {
     socket.on("say_hello", () => {
